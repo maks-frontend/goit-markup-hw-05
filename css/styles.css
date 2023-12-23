@@ -480,3 +480,90 @@ ul {
 
     fill: #f4f4fd;
 }
+.modal-container {
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(46, 47, 66, 0.4);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+.modal-window {
+    padding: 72px 24px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    background: #fcfcfc;
+    min-height: 584px;
+    width: 408px;
+    transform: translate(-50%, -50%) scale(1);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+.button-modal {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #e7e9fc;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    right: 24px;
+    top: 24px;
+    position: absolute;
+}
+.button-modal:hover, .button-modal:focus {
+    fill: #ffffff;
+    border: none;
+    background-color: #404bbf;
+}
+.modal-icon {
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-title {
+    margin-bottom: 16px;
+    color: #2E2F42;
+    letter-spacing: 0.02em;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 500;
+}
+.modal-form {
+}
+.modal-form-box {
+    margin-bottom: 8px;
+}
+.modal-form-label {
+
+    margin-bottom: 4px;
+    display: block;
+    color: #8e8f99;
+    letter-spacing: 0.04em;
+    line-height: 1.17;
+    font-size: 12px;
+}
+.label-icon {
+    position: relative;
+}
+.label-input {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    height: 40px;
+    width: 100%;
+}
+.label-input:focus {
+    border-color: #4D5AE5;
+}
