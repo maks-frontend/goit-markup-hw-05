@@ -555,17 +555,18 @@ ul {
 .label-icon {
     position: relative;
 }
+.label-input:focus {
+    border-color: #4D5AE5;
+}
 .label-input {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: transparent;
+    padding-left: 38px;
     background-color: transparent;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     height: 40px;
     width: 100%;
-}
-.label-input:focus {
-    border-color: #4D5AE5;
 }
 .label-icons {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
