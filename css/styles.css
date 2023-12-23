@@ -578,8 +578,8 @@ ul {
     left: 16px;
     position: absolute;
 }
-.label-icons:focus {
-    fill: #4D5AE5;
+.label-input:focus {
+    border-color: #4D5AE5;
 }
 .modal-comment {
 
